@@ -1,0 +1,117 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.warehouse {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.warehouse-row {
+  border: 2px solid #444;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+.row-label {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.shelf-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.shelf-unit {
+  border: 2px solid #444;
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+}
+
+.shelf-top {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+  background-color: #66b3ff;
+}
+
+.shelf-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+  background-color: #ff9999;
+}
+
+.shelf-cell {
+  border: 1px solid #222;
+  padding: 8px;
+  min-width: 30px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  color: #000;
+}
+
+.shelf-cell.highlight {
+  background-color: #cc0000 !important;
+  color: #fff;
+}
+
+.order-number {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 8px;
+  font-size: 16px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.form button {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.positions,
+.route-summary {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
